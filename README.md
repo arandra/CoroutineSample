@@ -13,24 +13,26 @@ custom::resumable 을 사용하여 동기 함수가 완료 되었을 때 호출�
 
 실행 예
 
---------------------- sample with future ------------------------
-A: Start WaitInputNumber in thread id 6172
-B: GetInputNumber in thread id 2576
- - Input number and press [enter] : 1
-C: Resume WaitInputNumber in thread id 2948
- - Input number is 1. -
-D: Finished in thread id 6172
+ --------------------- sample with future ------------------------
+ 
+ A: Start WaitInputNumber in thread id 6172
+ 
+ B: GetInputNumber in thread id 2576
+  - Input number and press [enter] : 1
+ 
+ C: Resume WaitInputNumber in thread id 2948
+  - Input number is 1. -
+ 
+ D: Finished in thread id 6172
 
---------------------- sample with custom resumable ------------------------
-A: Start WaitInputNumber in thread id 6172
-B: GetInputNumber in thread id 2576
- - Input number and press [enter] : 2
-C: Resume WaitInputNumber in thread id 6172
- - Input number is 2. -
-D: Finished in thread id 6172
-
-C:\Users\arandra\source\repos\CoroutineSample\x64\Debug\CoroutineSample.exe (pro
-cess 7940) exited with code 0.
-To automatically close the console when debugging stops, enable Tools->Options->
-Debugging->Automatically close the console when debugging stops.
-Press any key to close this window . . .
+ --------------------- sample with custom resumable ------------------------
+ 
+ A: Start WaitInputNumber in thread id 6172
+ 
+ B: GetInputNumber in thread id 2576
+  - Input number and press [enter] : 2
+ 
+ C: Resume WaitInputNumber in thread id 6172
+  - Input number is 2. -
+ 
+ D: Finished in thread id 6172
